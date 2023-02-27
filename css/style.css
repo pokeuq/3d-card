@@ -46,21 +46,25 @@
   @media screen and (max-width: 558px){
     pre{
       font-size: 1.5rem;
+      padding: 1rem;
     }
   }
   @media screen and (max-width: 425px){
     pre{
       font-size: 1.27rem;
+      padding: 0.84rem;
     }
   }
   @media screen and (max-width: 360px){
     pre{
       font-size: 1.15rem;
+      padding: 0.76rem;
     }
   }
   @media screen and (max-width: 330px){
     pre{
       font-size: 1rem;
+      padding: 0.6rem;
     }
   }
   
