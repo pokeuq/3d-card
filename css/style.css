@@ -14,7 +14,7 @@
       blue
     );
     background-blend-mode: multiply;
-    min-block-size: 100dvh;
+    min-block-size: 100vh;
     display: grid;
     place-items: center;
   }
@@ -37,9 +37,35 @@
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
   }
+
+  @media screen and (max-width: 768px){
+    pre{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 558px){
+    pre{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 425px){
+    pre{
+      font-size: 1.27rem;
+    }
+  }
+  @media screen and (max-width: 360px){
+    pre{
+      font-size: 1.15rem;
+    }
+  }
+  @media screen and (max-width: 330px){
+    pre{
+      font-size: 1rem;
+    }
+  }
   
   pre > * {
-    text-shadow: 0 0 0.1em currentColor;
+    text-shadow: 0 0 0.12em currentColor;
   }
   
   pre::before,
@@ -95,7 +121,7 @@
   .css-only pre {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    transition: transform 400ms ease-in-out;
+    transition: transform 600ms ease-in-out;
   }
   
   .pre-container.css-only > div {
